@@ -1,0 +1,69 @@
+/* custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* :root is a selector that represents the highest level of the document tree */
+:root {
+    /* custom properties */
+    --clr-blue-50: #fafdff;
+    --clr-blue-100: #ddedfc;
+    --clr-blue-200: #c2e0fb;
+    --clr-blue-300: #99cdf7;
+    --clr-blue-400: #68b1f2;
+    --clr-blue-500: #4592ec;
+    --clr-blue-600: #3076e0;
+    --clr-blue-700: #2761ce;
+    --clr-blue-800: #264fa7;
+    --clr-blue-900: #244584;
+    --clr-blue-950: #1f335f;
+    --clr-blue-1000: #172748;
+
+    --ff-Poppins: 'Poppins';
+    --ff-Montserrat: 'Montserrat';
+    --ff-Inter: 'Inter';
+}
+
+/* basic CSS resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+body {
+    font-family: var(--ff-Inter), Arial, sans-serif;
+    color: var(--clr-blue-1000);
+    background-color: var(--clr-blue-50);
+}
+
+/* so images and etc., won't overflow */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
