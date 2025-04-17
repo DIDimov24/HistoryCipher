@@ -3,7 +3,7 @@
 
 /* :root is a selector that represents the highest level of the document tree */
 :root {
-    /* custom properties */
+    /* every css file should include this root */
     --clr-blue-50: #fafdff;
     --clr-blue-100: #ddedfc;
     --clr-blue-200: #c2e0fb;
@@ -20,6 +20,10 @@
     --ff-Poppins: 'Poppins';
     --ff-Montserrat: 'Montserrat';
     --ff-Inter: 'Inter';
+
+    --hover-duration-slow: 350ms;
+    --hover-duration-normal: 300ms;
+    --hover-duration-fast: 200ms;
 }
 
 /* basic CSS resets */

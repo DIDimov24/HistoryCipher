@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home Page</title>
         <!-- favicon -->
-        <link rel="icon" href="images/logo.png" />
+        <link rel="icon" href="images/favicon.ico" />
         <!-- main css - every file should have it -->
         <link rel="stylesheet" href="styles/main.css" />
         <!-- individual css - the styles for every file -->
@@ -14,22 +14,34 @@
     <body>
         <header>
             <div class="headerLogo">
-                <img src="images/logo.png" alt="HistoryCipher logo" />
+                <a href="home.html"
+                    ><img src="images/logo.png" alt="HistoryCipher logo"
+                /></a>
             </div>
-            <nav class="headerNavBar">
-                <ul>
-                    <li>Home</li>
-                    <li>Cars</li>
-                    <li>Locations</li>
-                    <li>Pricing</li>
-                    <li>Reviews</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-            <button class="headerButton">
-                <a href="#">Rent now</a>
-            </button>
+            <div class="headerContainer">
+                <nav>
+                    <ul class="headerNavList">
+                        <li><a href="home.html">Home</a></li>
+                        <!-- dropdown menu -->
+                        <li class="dropDownParent">
+                            <a href="">Cars</a>
+                            <div class="dropDown">
+                                <a href="" class="dropDownElement">Example</a>
+                                <a href="" class="dropDownElement">Example</a>
+                                <a href="" class="dropDownElement">Example</a>
+                            </div>
+                        </li>
+                        <li><a href="">Locations</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Reviews</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="headerButton">
+                    <a href="#">Rent now</a>
+                </button>
+            </div>
         </header>
     </body>
 </html>
