@@ -31,11 +31,15 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-blend-mode: darken;
-    padding-top: 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding-left: 9rem;
     color: var(--clr-blue-50);
     --gap: 2.5rem;
+}
+
+.heroContainer {
+    padding-top: 8rem;
 }
 
 .heroTitle {
@@ -60,7 +64,7 @@
     color: white;
     font-weight: 600;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border-radius: 5px;
     transition: var(--hover-duration-normal);
     cursor: pointer;
@@ -68,6 +72,60 @@
 
 .heroButton:hover {
     background-color: var(--clr-blue-800);
+}
+
+.heroLocations {
+    padding-top: 1.2rem;
+}
+
+.heroLocationsTitle {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.heroLocationsGridLayout {
+    display: grid;
+    grid-template-columns: 290px 290px;
+    gap: 1rem;
+}
+
+.heroLocationsGridLayoutCard {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 24px;
+    padding: 15px;
+}
+
+.heroLocationsGridLayoutCard img {
+    max-width: 260px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.cardIconAndCity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.heroLocationsGridLayoutCardTitle {
+    font-size: 1.125rem;
+}
+
+.heroLocationsGridLayoutCardParagraph {
+    font-size: 0.825rem;
+}
+
+.heroLocationsGridLayout a {
+    transform: scale(1);
+    transition: var(--hover-duration-normal);
+}
+
+.heroLocationsGridLayout a:hover {
+    /* makes it grown in size when it's hovered */
+    transform: scale(1.03);
 }
 
 .featuredVehiclesTitle {
@@ -97,9 +155,17 @@
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     margin-bottom: 4rem;
+    transform: scale(1);
+    transition: var(--hover-duration-normal);
+}
+
+.featuredVehiclesGridLayoutCard:hover {
+    /* makes it grown in size when it's hovered */
+    transform: scale(1.03);
 }
 
 .featuredVehiclesGridLayoutCard img {
+    width: 280px;
     border-top-right-radius: inherit;
     border-top-left-radius: inherit;
 }
