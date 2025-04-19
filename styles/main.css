@@ -125,6 +125,7 @@ header {
 
 .headerButton:hover {
     background-color: var(--clr-blue-800);
+    transform: scale(1.04);
 }
 
 .dropDown {

@@ -36,7 +36,6 @@
                             <a href="">Locations</a>
                             <div class="dropDown">
                                 <a href="" class="dropDownElement">Sofia</a>
-                                <a href="" class="dropDownElement">Plovdiv</a>
                                 <a href="" class="dropDownElement">Burgas</a>
                                 <a href="" class="dropDownElement">Varna</a>
                             </div>
@@ -52,6 +51,15 @@
             </div>
         </header>
         <section class="hero">
+            <div class="heroBackground">
+                <video autoplay muted loop playsinline>
+                    <source
+                        src="images/video-background.mp4"
+                        type="video/mp4"
+                    />
+                </video>
+                <div class="heroBackgroundOverlay"></div>
+            </div>
             <div class="heroContainer">
                 <h1 class="heroTitle">
                     Find your perfect <br />
@@ -68,10 +76,10 @@
             </div>
             <div class="heroLocations">
                 <h2 class="heroLocationsTitle">Locations</h2>
-                <div class="heroLocationsGridLayout">
+                <div class="heroLocationStairway">
                     <!-- card 1 -->
-                    <a href="#">
-                        <div class="heroLocationsGridLayoutCard">
+                    <a href="#" class="card1">
+                        <div class="heroLocationStairwayCard">
                             <img
                                 src="images/sofia.jpg"
                                 alt="image of the city"
@@ -99,18 +107,18 @@
                                         stroke-linejoin="round"
                                     />
                                 </svg>
-                                <h2 class="heroLocationsGridLayoutCardTitle">
+                                <h2 class="heroLocationStairwayCardTitle">
                                     Burgas
                                 </h2>
                             </div>
-                            <p class="heroLocationsGridLayoutCardParagraph">
+                            <p class="heroLocationStairwayCardParagraph">
                                 Coastal city with beautiful beaches
                             </p>
                         </div>
                     </a>
                     <!-- card 2 -->
-                    <a href="#">
-                        <div class="heroLocationsGridLayoutCard">
+                    <a href="#" class="card2">
+                        <div class="heroLocationStairwayCard">
                             <img
                                 src="images/sofia.jpg"
                                 alt="image of the city"
@@ -138,57 +146,18 @@
                                         stroke-linejoin="round"
                                     />
                                 </svg>
-                                <h2 class="heroLocationsGridLayoutCardTitle">
-                                    Plovdiv
-                                </h2>
-                            </div>
-                            <p class="heroLocationsGridLayoutCardParagraph">
-                                Historic city with ancient ruins
-                            </p>
-                        </div>
-                    </a>
-                    <!-- card 3 -->
-                    <a href="#">
-                        <div class="heroLocationsGridLayoutCard">
-                            <img
-                                src="images/sofia.jpg"
-                                alt="image of the city"
-                            />
-                            <div class="cardIconAndCity">
-                                <svg
-                                    width="25px"
-                                    height="25px"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
-                                        stroke="#4592ec"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                    <path
-                                        d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
-                                        stroke="#4592ec"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                                <h2 class="heroLocationsGridLayoutCardTitle">
+                                <h2 class="heroLocationStairwayCardTitle">
                                     Varna
                                 </h2>
                             </div>
-                            <p class="heroLocationsGridLayoutCardParagraph">
+                            <p class="heroLocationStairwayCardParagraph">
                                 Seaside resort city with golden beaches
                             </p>
                         </div>
                     </a>
-                    <!-- card 4 -->
-                    <a href="#">
-                        <div class="heroLocationsGridLayoutCard">
+                    <!-- card 3 -->
+                    <a href="#" class="card3">
+                        <div class="heroLocationStairwayCard">
                             <img
                                 src="images/sofia.jpg"
                                 alt="image of the city"
@@ -216,11 +185,11 @@
                                         stroke-linejoin="round"
                                     />
                                 </svg>
-                                <h2 class="heroLocationsGridLayoutCardTitle">
+                                <h2 class="heroLocationStairwayCardTitle">
                                     Sofia
                                 </h2>
                             </div>
-                            <p class="heroLocationsGridLayoutCardParagraph">
+                            <p class="heroLocationStairwayCardParagraph">
                                 Capital city with international airport
                             </p>
                         </div>
